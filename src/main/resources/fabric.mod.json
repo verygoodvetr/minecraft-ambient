@@ -1,0 +1,51 @@
+{
+	"schemaVersion": 1,
+	"id": "minecraft-ambient",
+	"version": "${version}",
+	"name": "Minecraft Ambient",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/minecraft-ambient/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "com.sam.minecraftambient.MinecraftAmbient",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "com.sam.minecraftambient.client.MinecraftAmbientClient",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "com.sam.minecraftambient.client.MinecraftAmbientDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"minecraft-ambient.mixins.json",
+		{
+			"config": "minecraft-ambient.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
