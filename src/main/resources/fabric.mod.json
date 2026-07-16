@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "minecraft-ambient",
+	"id": "minecraftambient",
 	"version": "${version}",
 	"name": "Minecraft Ambient",
 	"description": "This is an example description! Tell everyone what your mod is about!",

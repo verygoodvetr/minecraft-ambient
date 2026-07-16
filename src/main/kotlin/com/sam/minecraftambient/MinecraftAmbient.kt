@@ -5,7 +5,7 @@ import net.minecraft.resources.Identifier
 import org.slf4j.LoggerFactory
 
 object MinecraftAmbient : ModInitializer {
-	const val MOD_ID: String = "minecraft-ambient"
+	const val MOD_ID: String = "minecraftambient"
 
 	private val LOGGER = LoggerFactory.getLogger(MOD_ID)
 
@@ -14,7 +14,8 @@ object MinecraftAmbient : ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!")
+		LOGGER.info("Minecraft Ambient is starting...")
+		LOGGER.info("Real-world synchronization systems ready.")
 	}
 
 	fun id(path: String): Identifier
